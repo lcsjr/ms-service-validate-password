@@ -120,24 +120,3 @@ Validação:
 * **RESPONSE**, retornará se o password contém uma string válida para uma senha e quais foram os critérios de aceite utilizados para a validação. 
 
 
-Documentação:
-foi utilizado o swagger para que além da documentação da API, poder disponibilizar o recurso 
-de teste do enpoint assim como também o contrato para consumo (Request/Response).
-
-O projeto, 
-a estrutura de package foi origanizado pelo domain e separada por atribuições de classes.
-
-A classe **'ValidatePasswordServiceImpl'**
-foi implementada a partir do contrato de validação de senha. 
-Esta classe é de suma importância para a validação dos critérios de aceite de uma string de senha válida. 
-Ou seja, esta classe tem uma única reponsabilidade: a validar a string senha.
-
-O Lombok,
-foi um recurso para designer Builder além dos recursos de getters, setters, toString, equals pelas anotations @Builder e @Data, respectivamente.
-
-Application.yml
-contém informações de descritivo da API para consumo do Swagger assim como da aplicação, como por exemplo a porta em que o serviço vai rodar.
-
-Como mencionado no item **'Adicional'**, optei por além de retornar se a senha é válida, também retornar os critérios avaliados. 
-Isso ajudará o usuário final a identificar facilmente qual dos critérios avaliados não foi informado corretamente na elaboração de sua senha.
-
